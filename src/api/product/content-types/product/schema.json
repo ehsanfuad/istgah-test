@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "discountedPrice": {
+      "type": "decimal"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "color": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dynamic.color"
+    },
+    "weight": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dynamic.weight"
+    },
+    "stock": {
+      "type": "integer"
+    },
+    "feature": {
+      "type": "component",
+      "repeatable": true,
+      "component": "static.feature"
+    },
+    "grind": {
+      "type": "component",
+      "repeatable": false,
+      "component": "static.grind"
+    },
+    "product_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product-type.product-type"
+    }
+  }
+}

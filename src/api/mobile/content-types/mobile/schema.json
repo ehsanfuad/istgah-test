@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mobiles",
+  "info": {
+    "singularName": "mobile",
+    "pluralName": "mobiles",
+    "displayName": "mobile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mobile": {
+      "type": "string"
+    },
+    "otp": {
+      "type": "json"
+    }
+  }
+}

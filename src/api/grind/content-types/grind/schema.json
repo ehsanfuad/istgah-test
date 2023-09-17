@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "grinds",
+  "info": {
+    "singularName": "grind",
+    "pluralName": "grinds",
+    "displayName": "grind"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

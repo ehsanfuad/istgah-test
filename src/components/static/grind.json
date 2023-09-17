@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_static_grinds",
+  "info": {
+    "displayName": "grind"
+  },
+  "options": {},
+  "attributes": {
+    "grinds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::grind.grind"
+    }
+  }
+}
